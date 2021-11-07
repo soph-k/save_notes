@@ -1,29 +1,28 @@
-# Save Notes
+# Save Notes 
 
 ![license](https://img.shields.io/badge/license-MIT-red)
 
-
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/soph-k/generate_team_profile"/>
-    <img src="https://img.shields.io/github/last-commit/soph-k/generate_team_profile"/>
+    <img src="https://img.shields.io/github/repo-size/soph-k/save_notes"/>
+    <img src="https://img.shields.io/github/last-commit/soph-k/save_notes"/>
 </p>
 <p align="center">
+    <img src="https://img.shields.io/badge/HTML-red"/>
+    <img src="https://img.shields.io/badge/CSS-blue"/>
     <img src="https://img.shields.io/badge/Javascript-yellow"/>
-    <img src="https://img.shields.io/badge/jQuery-gray"/>
     <img src="https://img.shields.io/badge/-node.js-red"/>
     <img src="https://img.shields.io/badge/-json-blue" />
-    <img src="https://img.shields.io/badge/-inquirer-pink"/>
+    <img src="https://img.shields.io/badge/-express-pink"/>
 </p>
-   
 
-# Description
-A simple script based on node.js using the inquirer - npm to generate 
-page that contains information of multiple team members.
+## Overview
+A simple script based on node.js using the express - npm to create, save, and delete user notes based on the user's selection. 
 
 
 ## Table of Contents
 - [Overview](#overview)
 - [Authors](#authors)
+- [Heroku](#heroku)
 - [Preview](#preview)
 - [Features](#features)
 - [Installation](#installation)
@@ -35,47 +34,39 @@ page that contains information of multiple team members.
 
 
 ## Authors
- - Author: Sophia
- - GitHub: [soph-k](https://github.com/soph-k)
+- Author: Sophia
+- GitHub: [soph-k](https://github.com/soph-k)
 - Version 1.1
 
 
+## Heroku
+[Heroku Link](https://sophk-heroku.herokuapp.com/)
+
 ## Preview
-![Preview](./assets/images/demo.gif)
+![Preview](./assets/images/screenshot.png)
 
 
 ## Features
-- Javascript 
+- HTML
+- CSS
+  - Bootstrap
+- Javascript
 - Node.js 
-    - Inquirer.js
-
+  - Express npm
+- Heroku  
 
 
 ## Installation
-The Generate Team Profile is based on the Inquirer npm. 
-Before using commands please be sure Inquirer npm is installed. 
+The Save Notes Project is based upon NodeJs. 
+Before using this project, please run the following commands below.
+Be sure Express npm is installed.
 If not, run the following commands in the following order: 
-
 ```
-npm init
+npm i
 ```
 ```
-npm install inquirer
+npm install express
 ```
-
-
-## Usage
-Once all of the files and Inquirer npm is set up, 
-begin generating your README.md file by using the following 
-command in the terminal of your project and answer each question.
-
-```
-node index.js
-```
-
-
-## Test
-Each aspect of the Generate Team Profile project was tested using Jest. 
 
 
 ## Contribution
@@ -86,9 +77,9 @@ Contributions are accepted. Feel free to fork without permission.
 This project is under the MIT license.
 
 
-###
+### Questions
 For questions about this project, please review my GitHub repo at [soph-k](https://github.com/soph-k) or contact me on Github.
 
 
 #### Bugs 
-- No known bugs.
+- No known bugs
