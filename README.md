@@ -43,7 +43,7 @@ A simple script based on node.js using the express - npm to create, save, and de
 [Heroku Link](https://sophk-heroku.herokuapp.com/)
 
 ## Preview
-![Preview](./assets/images/screenshot.png)
+![Preview](./public/assets/images/screenshot.png)
 
 
 ## Features
