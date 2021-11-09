@@ -10,8 +10,8 @@ const express = require("express");
 const { v4: uuidv4 } = require('uuid');
 
 //Linking database
-const dbJson = require('./db/db.json');
-
+const dbJsonImport = require('./db/db.json');
+let dbJson = dbJsonImport
 //Defining Port
 const PORT = process.env.PORT || 3001;
 
@@ -38,20 +38,19 @@ app.get('/notes', (req, res) =>
 
 ///////////////////////// GET Method /////////////////////////
 //Get home page
-app.get("/", (req, res) => {
-  res.json(dbJson);
-});
+
 
 // Get all of the old notes
-app.get("/notes", (req, res) => {
+app.get("/api/notes", (req, res) => {
   res.json(dbJson);
 });
 
 ///////////////////////// Post Method /////////////////////////
 //Creates a new note
-app.post("/notes", (req, res) => {
-  req.body.id = uuidv4();
-  dbJson.push(req.body);
+app.post("/api/notes", (req, res) => {
+  let rbody = req.body
+  rbody.id = uuidv4();
+  dbJson.push(rbody);
 
   fs.writeFile('./db/db.json', JSON.stringify(dbJson), (err) =>{
     err ? console.error(err) : console.log('YaY!')
@@ -61,8 +60,9 @@ app.post("/notes", (req, res) => {
 
 ///////////////////////// Delete Method /////////////////////////
 //Deletes selected note
-app.delete("/notes/:id", (req, res) => {
-  dbJson = dbJson.filter (note => note.id != req.params.id);
+app.delete("/api/notes/:id", (req, res) => {
+  let rparam = req.params.id;
+  dbJson = dbJson.filter(note => note.id != rparam);
 
   fs.writeFile('./db/db.json', JSON.stringify(dbJson), (err) =>{
     err ? console.error(err) : console.log('YaY')
