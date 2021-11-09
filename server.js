@@ -13,7 +13,7 @@ const { v4: uuidv4 } = require('uuid');
 const dbJson = require('./db/db.json');
 
 //Defining Port
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
